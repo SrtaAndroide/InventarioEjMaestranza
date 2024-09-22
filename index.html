@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maestranza - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Maestranza</h1>
+    </header>
+    <main>
+        <section id="product-management">
+            <h2>Registro de Productos</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+                <input type="number" id="product-stock" placeholder="Stock Inicial" required>
+                <input type="number" id="product-price" placeholder="Precio" required>
+                <input type="url" id="product-image" placeholder="URL de la Imagen" required>
+                <textarea id="product-description" placeholder="Descripción del Producto"></textarea>
+                <button type="submit">Agregar Producto</button>
+            </form>
+            
+        </section>
+        <section id="inventory">
+            <h2>Inventario</h2>
+            <table id="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <!-- Other sections for process purchase, customer support, etc. -->
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+        <!-- Aquí agregarás la nueva sección para la interfaz de cliente -->
+        <section id="store">
+            <!-- Aquí se mostrarán los productos disponibles para comprar -->
+        </section>
+        <aside id="cart">
+            <!-- Aquí se mostrarán los productos agregados al carrito -->
+            <button id="checkout-button">Pagar</button>
+        </aside>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="client.js"></script> <!-- Agrega el script para la interfaz de cliente -->
+</body>
+</html>
